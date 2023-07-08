@@ -1,0 +1,15 @@
+spring:
+  liquibase:
+    change-log: "classpath:db/changelog/schema.sql"
+  application:
+    name: "sensor-web"
+  datasource:
+    driver-class-name: "org.postgresql.Driver"
+    url: "jdbc:postgresql://localhost:5432/sensor_db"
+    username: "user"
+    password: "user"
+server:
+  port: 8080
+#springdoc:
+#  swagger-ui:
+#    path: "/swagger-ui.html"
