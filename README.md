@@ -6,6 +6,7 @@
 - Run db in docker ```docker compose up```
 - Run app ```./gradlew bootRun```
 - Run tests: ```./gradlew test```
+- Link to swagger ```http://localhost:8080/swagger-ui/index.html```
 
 ### Run postgres in docker
 - Start docker container ```docker compose up```
