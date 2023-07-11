@@ -7,6 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
 public class SensorDTO {
 
     @NotEmpty(message = "Sensor name cannot be null")

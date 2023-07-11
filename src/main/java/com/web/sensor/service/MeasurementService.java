@@ -34,7 +34,6 @@ public class MeasurementService {
 
     @Transactional
     public MeasurementDTO add(MeasurementDTO measurementDTO) {
-        // handle in exception validator create custom exception
         var sensor = sensorRepository.findByName(measurementDTO.getSensor().getName())
                 .orElseThrow(SensorNotFoundException::new);
         var measurement = new Measurement(measurementDTO.getValue(), measurementDTO.isRaining(), sensor);
